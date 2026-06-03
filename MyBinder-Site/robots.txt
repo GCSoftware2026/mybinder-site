@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# TODO: sostituisci il dominio con quello reale una volta acquistato
+Sitemap: https://www.mybinder.app/sitemap.xml

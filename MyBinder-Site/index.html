@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ===================== SEO ===================== -->
+  <title>MyBinder — Il tuo binder digitale per carte collezionabili</title>
+  <meta name="description" content="MyBinder è l'app premium per iPhone e iPad che ti permette di scansionare, organizzare e monitorare il valore della tua collezione di carte TCG. Multi-gioco, intelligente, elegante." />
+  <meta name="theme-color" content="#2478FF" />
+  <link rel="canonical" href="https://www.mybinder.app/" />
+
+  <!-- ===================== Open Graph ===================== -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="MyBinder — Il tuo binder digitale per carte collezionabili" />
+  <meta property="og:description" content="Scansiona, organizza e monitora il valore della tua collezione TCG in un'unica app premium. Disponibile su App Store." />
+  <meta property="og:image" content="assets/og-image.png" /> <!-- TODO: sostituisci con un'immagine social 1200x630 -->
+  <meta property="og:url" content="https://www.mybinder.app/" />
+  <meta property="og:locale" content="it_IT" />
+
+  <!-- ===================== Twitter ===================== -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="MyBinder — Il tuo binder digitale per carte collezionabili" />
+  <meta name="twitter:description" content="Scansiona, organizza e monitora il valore della tua collezione TCG in un'unica app premium." />
+  <meta name="twitter:image" content="assets/og-image.png" />
+
+  <!-- ===================== Favicon / App icon ===================== -->
+  <link rel="icon" type="image/png" href="assets/app-icon.png" />
+  <link rel="apple-touch-icon" href="assets/app-icon.png" />
+
+  <!-- ===================== Fonts ===================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#hero" class="nav__brand">
+        <img src="assets/app-icon.png" alt="Icona MyBinder" class="nav__icon" />
+        <span>MyBinder</span>
+      </a>
+      <nav class="nav__links">
+        <a href="#features">Funzioni</a>
+        <a href="#how">Come funziona</a>
+        <a href="#value">Valore</a>
+        <a href="#premium">Premium</a>
+      </nav>
+      <!-- TODO: incolla qui il link reale dell'App Store -->
+      <a href="#" class="btn btn--small" data-appstore>Scarica</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="hero">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__copy reveal">
+          <span class="hero__badge">Disponibile solo su App Store — per ora</span>
+          <h1 class="hero__title">Il tuo binder digitale<br />per carte collezionabili.</h1>
+          <p class="hero__subtitle">
+            Scansiona, organizza e monitora il valore della tua collezione TCG
+            in un'unica app premium. Intelligente, elegante, sempre con te.
+          </p>
+          <div class="hero__cta">
+            <!-- TODO: incolla qui il link reale dell'App Store -->
+            <a href="#" class="btn btn--appstore" data-appstore>
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M16.365 1.43c0 1.14-.42 2.2-1.12 3-.78.9-2.05 1.6-3.1 1.52-.13-1.1.43-2.27 1.1-3.02.77-.86 2.13-1.5 3.12-1.5zM20.5 17.04c-.6 1.38-.88 2-1.66 3.22-1.08 1.7-2.6 3.82-4.49 3.84-1.68.02-2.11-1.1-4.39-1.08-2.28.01-2.76 1.1-4.44 1.08-1.89-.02-3.33-1.93-4.41-3.63C-1.4 16.7-1.72 10.9.95 7.86c1.27-1.45 3.27-2.37 5.1-2.37 1.86 0 3.03 1.1 4.57 1.1 1.49 0 2.4-1.1 4.55-1.1 1.63 0 3.36.89 4.59 2.42-4.03 2.2-3.37 7.96.74 9.13z"/></svg>
+              Scarica su App Store
+            </a>
+            <a href="#features" class="btn btn--ghost">Scopri le funzioni</a>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal">
+          <div class="phone">
+            <div class="phone__notch" aria-hidden="true"></div>
+            <!-- TODO: sostituisci con lo screenshot reale della home (assets/screenshots/screenshot-home.png) -->
+            <img src="assets/screenshots/screenshot-home.png" alt="Schermata principale di MyBinder" class="phone__shot" onerror="this.classList.add('is-placeholder')" />
+          </div>
+          <div class="hero__appicon">
+            <img src="assets/app-icon.png" alt="Icona dell'app MyBinder" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FEATURE PRINCIPALI ===================== -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Tutto in un'app</span>
+          <h2>Pensata per chi colleziona sul serio.</h2>
+          <p>Dalla scansione al valore della collezione: ogni dettaglio curato come ti aspetti da un'app premium.</p>
+        </div>
+
+        <div class="grid grid--features">
+          <article class="card feature reveal">
+            <div class="feature__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9V7a2 2 0 0 1 2-2h2"/><path d="M17 5h2a2 2 0 0 1 2 2v2"/><path d="M21 15v2a2 2 0 0 1-2 2h-2"/><path d="M7 19H5a2 2 0 0 1-2-2v-2"/><rect x="8" y="8" width="8" height="8" rx="1.5"/></svg>
+            </div>
+            <h3>Scansione con fotocamera</h3>
+            <p>Inquadra la carta e lasciala riconoscere all'app. Veloce, preciso, senza inserimenti manuali.</p>
+          </article>
+
+          <article class="card feature reveal">
+            <div class="feature__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4"/><path d="M12 18v4"/><path d="m4.93 4.93 2.83 2.83"/><path d="m16.24 16.24 2.83 2.83"/><path d="M2 12h4"/><path d="M18 12h4"/><circle cx="12" cy="12" r="3.5"/></svg>
+            </div>
+            <h3>Riconoscimento OCR/AI</h3>
+            <p>Nome, numero e lingua individuati automaticamente, anche con più carte nella stessa inquadratura.</p>
+          </article>
+
+          <article class="card feature reveal">
+            <div class="feature__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h9l5 5v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M8 3v18"/></svg>
+            </div>
+            <h3>Binder digitali multipli</h3>
+            <p>Organizza le carte in più raccoglitori, proprio come faresti nella realtà ma senza limiti.</p>
+          </article>
+
+          <article class="card feature reveal">
+            <div class="feature__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 14 3-3 3 3 5-6"/></svg>
+            </div>
+            <h3>Valore e grafici</h3>
+            <p>Stima del valore totale e per set, con l'andamento nel tempo della tua collezione.</p>
+          </article>
+
+          <article class="card feature reveal">
+            <div class="feature__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.5-1.5 3-3.3 3-5.5A4.5 4.5 0 0 0 12 5 4.5 4.5 0 0 0 2 8.5C2 13 7.5 17 12 21c2-1.8 4.4-3.9 6-5.5"/></svg>
+            </div>
+            <h3>Wishlist</h3>
+            <p>Tieni traccia delle carte che ti mancano e completa le tue serie con un piano chiaro.</p>
+          </article>
+
+          <article class="card feature reveal">
+            <div class="feature__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19a4.5 4.5 0 0 0 .5-9 6 6 0 0 0-11.6-1.5A4 4 0 0 0 6 19z"/><path d="M12 12v6"/><path d="m9 15 3-3 3 3"/></svg>
+            </div>
+            <h3>Sincronizzazione iCloud</h3>
+            <p>La tua collezione ti segue su iPhone e iPad, sempre allineata e al sicuro.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== COME FUNZIONA ===================== -->
+    <section class="section section--soft" id="how">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">In tre semplici passi</span>
+          <h2>Dalla carta alla collezione, in pochi secondi.</h2>
+        </div>
+
+        <div class="grid grid--steps">
+          <article class="step reveal">
+            <span class="step__num">1</span>
+            <h3>Scansiona le tue carte</h3>
+            <p>Apri la fotocamera e cattura una o più carte. L'app fa il resto.</p>
+          </article>
+          <article class="step reveal">
+            <span class="step__num">2</span>
+            <h3>Organizzale nei tuoi binder</h3>
+            <p>Smista le carte nei raccoglitori, aggiungi prodotti sigillati e crea il tuo ordine ideale.</p>
+          </article>
+          <article class="step reveal">
+            <span class="step__num">3</span>
+            <h3>Scopri valore e progressi</h3>
+            <p>Visualizza valore, andamento e completamento dei set in tempo reale.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SCANSIONE INTELLIGENTE ===================== -->
+    <section class="section" id="scan">
+      <div class="container split">
+        <div class="split__media reveal">
+          <div class="phone phone--sm">
+            <div class="phone__notch" aria-hidden="true"></div>
+            <!-- TODO: sostituisci con screenshot-scan.png -->
+            <img src="assets/screenshots/screenshot-scan.png" alt="Schermata di scansione di MyBinder" class="phone__shot" onerror="this.classList.add('is-placeholder')" />
+          </div>
+        </div>
+        <div class="split__copy reveal">
+          <span class="eyebrow">Scansione intelligente</span>
+          <h2>Una tecnologia che riconosce davvero le tue carte.</h2>
+          <ul class="ticks">
+            <li>Riconoscimento automatico tramite OCR e AI</li>
+            <li>Più carte rilevate nella stessa inquadratura</li>
+            <li>Lingua individuata in automatico: italiano, inglese, giapponese</li>
+            <li>Supporto multi-gioco: nata per Pokémon, aperta a più giochi di carte collezionabili</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== VALORE DELLA COLLEZIONE ===================== -->
+    <section class="section section--soft" id="value">
+      <div class="container split split--reverse">
+        <div class="split__media reveal">
+          <div class="phone phone--sm">
+            <div class="phone__notch" aria-hidden="true"></div>
+            <!-- TODO: sostituisci con screenshot-value.png -->
+            <img src="assets/screenshots/screenshot-value.png" alt="Schermata del valore della collezione in MyBinder" class="phone__shot" onerror="this.classList.add('is-placeholder')" />
+          </div>
+        </div>
+        <div class="split__copy reveal">
+          <span class="eyebrow">Valore della collezione</span>
+          <h2>Numeri trasparenti, mai inventati.</h2>
+          <p>
+            MyBinder ti mostra una stima del valore della tua collezione basata su
+            <strong>prezzi di riferimento</strong> reali. Tutto in modo chiaro e onesto.
+          </p>
+          <ul class="ticks">
+            <li>Stima del valore totale e per ogni set</li>
+            <li>Grafici dell'andamento indicativo nel tempo</li>
+            <li>La tua carta migliore e i movimenti di prezzo</li>
+            <li>Prezzi di riferimento da CardMarket e TCGplayer</li>
+            <li>Valuta in € o $ in base alle tue impostazioni</li>
+          </ul>
+          <p class="note">
+            I valori mostrati sono stime indicative basate su prezzi di riferimento di mercato, non quotazioni garantite.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SET, SERIE E COMPLETAMENTO ===================== -->
+    <section class="section" id="sets">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Set, serie e completamento</span>
+          <h2>Vedi quanto sei vicino a completare le tue serie.</h2>
+        </div>
+        <div class="grid grid--trio">
+          <article class="card pill reveal">
+            <h3>Esplora set e serie</h3>
+            <p>Naviga tra le serie e tieni d'occhio ogni set della tua collezione.</p>
+          </article>
+          <article class="card pill reveal">
+            <h3>Completamento Pokémon</h3>
+            <p>Per i set Pokémon vedi la percentuale di completamento, carta dopo carta.</p>
+          </article>
+          <article class="card pill reveal">
+            <h3>Valore diviso per set</h3>
+            <p>Capisci dove si concentra il valore e gestisci anche i prodotti sigillati.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PREMIUM ===================== -->
+    <section class="section section--premium" id="premium">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow eyebrow--light">MyBinder Premium</span>
+          <h2>Porta la tua collezione al livello successivo.</h2>
+          <p>Sblocca gli strumenti avanzati pensati per i collezionisti più esigenti.</p>
+        </div>
+
+        <div class="premium__grid">
+          <ul class="premium__list reveal">
+            <li>Statistiche avanzate sulla collezione</li>
+            <li>Notifiche sui movimenti di prezzo</li>
+            <li>Inspect: valutazione di centratura e condizione</li>
+            <li>Export CSV dei tuoi dati</li>
+            <li>Backup della collezione</li>
+            <li>Esperienza completamente senza pubblicità</li>
+          </ul>
+          <div class="premium__cta card reveal">
+            <h3>Provalo gratis</h3>
+            <p>Inizia con la prova gratuita oppure scegli l'opzione <strong>lifetime</strong> e sblocca tutto per sempre.</p>
+            <!-- TODO: incolla qui il link reale dell'App Store -->
+            <a href="#" class="btn btn--appstore" data-appstore>Scarica su App Store</a>
+            <p class="note note--center">Gli utenti free possono usare l'app con pubblicità.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SCREENSHOT GALLERY ===================== -->
+    <section class="section section--soft" id="gallery">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Dai un'occhiata</span>
+          <h2>MyBinder in azione.</h2>
+        </div>
+        <div class="gallery reveal">
+          <!-- TODO: sostituisci ogni immagine con lo screenshot reale corrispondente -->
+          <div class="gallery__item"><img src="assets/screenshots/screenshot-home.png" alt="Schermata home" onerror="this.classList.add('is-placeholder')" /></div>
+          <div class="gallery__item"><img src="assets/screenshots/screenshot-scan.png" alt="Schermata scansione" onerror="this.classList.add('is-placeholder')" /></div>
+          <div class="gallery__item"><img src="assets/screenshots/screenshot-binder.png" alt="Schermata binder" onerror="this.classList.add('is-placeholder')" /></div>
+          <div class="gallery__item"><img src="assets/screenshots/screenshot-value.png" alt="Schermata valore" onerror="this.classList.add('is-placeholder')" /></div>
+          <div class="gallery__item"><img src="assets/screenshots/screenshot-premium.png" alt="Schermata premium" onerror="this.classList.add('is-placeholder')" /></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ANDROID WAITLIST ===================== -->
+    <section class="section" id="android">
+      <div class="container">
+        <div class="waitlist card reveal">
+          <h2>Vuoi MyBinder su Android?</h2>
+          <p>Per ora MyBinder è disponibile solo su App Store. Lascia la tua email e ti avviseremo non appena arriva su Android.</p>
+          <!--
+            TODO: questo form è statico/non funzionante.
+            Per renderlo attivo collega un servizio, ad esempio:
+              - Formspree:  <form action="https://formspree.io/f/XXXX" method="POST">
+              - Supabase / Firebase: gestisci l'invio in scripts/main.js (vedi handleWaitlist)
+          -->
+          <form class="waitlist__form" id="waitlist-form">
+            <input type="email" name="email" placeholder="La tua email" required aria-label="La tua email" />
+            <button type="submit" class="btn btn--appstore">Avvisami</button>
+          </form>
+          <p class="waitlist__msg" id="waitlist-msg" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PRIVACY ===================== -->
+    <section class="section section--soft" id="privacy">
+      <div class="container privacy reveal">
+        <span class="eyebrow">Privacy</span>
+        <h2>I tuoi dati restano tuoi.</h2>
+        <p>
+          MyBinder usa iCloud per sincronizzare la collezione tra i tuoi dispositivi
+          e ti offre export e backup dei dati quando vuoi. Nessuna sorpresa, nessun trucco.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="assets/app-icon.png" alt="Icona MyBinder" class="footer__icon" />
+        <div>
+          <strong>MyBinder</strong>
+          <p>Il tuo binder digitale per carte collezionabili. Scansiona, organizza, monitora il valore.</p>
+        </div>
+      </div>
+      <nav class="footer__links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Termini di servizio</a>
+        <!-- TODO: sostituisci con la tua email di contatto reale -->
+        <a href="mailto:hello@mybinder.app">hello@mybinder.app</a>
+      </nav>
+    </div>
+    <div class="container footer__bottom">
+      <span>© 2026 MyBinder. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
