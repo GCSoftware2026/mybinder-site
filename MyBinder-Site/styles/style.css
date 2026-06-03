@@ -476,3 +476,57 @@ h3 { font-size: 1.2rem; font-weight: 700; }
   .btn--appstore::after, .hero__badge .dot { animation: none; }
   html { scroll-behavior: auto; }
 }
+
+/* ===================================================================
+   Mobile polish (iPhone) — densità, CTA tap-friendly, scaling visual
+   =================================================================== */
+
+/* Niente flash blu di iOS al tocco di link/bottoni */
+a, button { -webkit-tap-highlight-color: transparent; }
+
+/* Safe-area: rispetta notch/Dynamic Island, soprattutto in landscape */
+@supports (padding: max(0px)) {
+  .container {
+    padding-left: max(var(--gutter), env(safe-area-inset-left));
+    padding-right: max(var(--gutter), env(safe-area-inset-right));
+  }
+  .legal { padding-left: max(var(--gutter), env(safe-area-inset-left));
+           padding-right: max(var(--gutter), env(safe-area-inset-right)); }
+}
+
+@media (max-width: 600px) {
+  :root { --gutter: 18px; }
+
+  /* Hero: meno aria verticale, CTA a tutta larghezza per il pollice */
+  .hero { padding: 54px 0 60px; }
+  .hero__inner { gap: 40px; }
+  .hero__subtitle { margin-bottom: 28px; }
+  .hero__cta { flex-direction: column; align-items: stretch; gap: 12px; }
+  .hero__cta .btn { width: 100%; }
+
+  /* Sezioni più compatte */
+  .section { padding: 60px 0; }
+  .section__head { margin-bottom: 38px; }
+  .section__head p { font-size: 1rem; }
+
+  /* Componenti */
+  .card { padding: 24px; }
+  .grid { gap: 16px; }
+  .stat { padding: 18px 10px; }
+  .split { gap: 34px; }
+  .premium__cta { padding: 26px; }
+  .footer { padding: 48px 0 24px; }
+
+  /* Waitlist: input + bottone impilati a piena larghezza */
+  .waitlist__form { flex-direction: column; }
+  .waitlist__form .btn { width: 100%; }
+}
+
+/* iPhone stretti (SE / mini): scala il mockup e le card decorative */
+@media (max-width: 380px) {
+  .phone { width: 248px; }
+  .phone--sm { width: 214px; }
+  .hero__appicon { width: 66px; height: 66px; right: 6%; bottom: 4%; }
+  .floatcard { width: 76px; height: 106px; }
+  .hero__title { font-size: clamp(2rem, 8vw, 2.6rem); }
+}
