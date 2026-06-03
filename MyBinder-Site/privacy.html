@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy Policy — MyBinder</title>
-  <meta name="description" content="Informativa sulla privacy di MyBinder: quali dati trattiamo, come usiamo iCloud, e i tuoi diritti." />
+  <meta name="description" content="Informativa sulla privacy di MyBinder." />
   <meta name="robots" content="index, follow" />
   <link rel="icon" type="image/png" href="assets/app-icon.png" />
   <link rel="apple-touch-icon" href="assets/app-icon.png" />
@@ -13,134 +13,137 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles/style.css" />
+  <script>
+    window.MB_META = {
+      it: { title: 'Privacy Policy — MyBinder', desc: 'Informativa sulla privacy di MyBinder.' },
+      en: { title: 'Privacy Policy — MyBinder', desc: 'MyBinder privacy policy.' }
+    };
+  </script>
 </head>
 <body>
 
   <header class="legal-hero">
     <div class="container">
-      <a href="index.html" class="legal-back">← Torna a MyBinder</a>
+      <div class="legal-hero__top">
+        <a href="index.html" class="legal-back">← <span data-lang="it">Torna a MyBinder</span><span data-lang="en">Back to MyBinder</span></a>
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" data-setlang="it">IT</button>
+          <button type="button" data-setlang="en">EN</button>
+        </div>
+      </div>
       <h1>Privacy Policy</h1>
-      <p>Come trattiamo i tuoi dati quando usi MyBinder.</p>
+      <p><span data-lang="it">Come trattiamo i tuoi dati quando usi MyBinder.</span><span data-lang="en">How we handle your data when you use MyBinder.</span></p>
     </div>
   </header>
 
   <main class="legal">
-    <span class="updated">Ultimo aggiornamento: 1 giugno 2026</span>
+    <span class="updated"><span data-lang="it">Ultimo aggiornamento: 1 giugno 2026</span><span data-lang="en">Last updated: June 1, 2026</span></span>
 
-    <!--
-      ATTENZIONE LEGALE: questo testo è un modello di base, non una consulenza legale.
-      Compila le parti tra parentesi quadre e, se vendi abbonamenti / tratti dati di
-      utenti UE, valuta una revisione da parte di un consulente. Aggiorna la data
-      a ogni modifica sostanziale.
-    -->
+    <!-- ATTENZIONE: modello di base, non consulenza legale. Compila le parti tra parentesi. -->
     <div class="placeholder">
-      Da personalizzare: sostituisci <strong>[Nome del titolare / società]</strong>,
-      <strong>[indirizzo]</strong> e <strong>[email di contatto]</strong> con i tuoi dati reali.
+      <span data-lang="it">Da personalizzare: sostituisci <strong>[Nome del titolare / società]</strong>, <strong>[indirizzo]</strong> e <strong>[email]</strong> con i tuoi dati reali.</span>
+      <span data-lang="en">To customize: replace <strong>[Owner / company name]</strong>, <strong>[address]</strong> and <strong>[email]</strong> with your real details.</span>
     </div>
 
-    <h2 id="intro">1. Introduzione</h2>
-    <p>
-      La presente informativa descrive come <strong>MyBinder</strong> ("l'app", "noi")
-      tratta i dati delle persone che la utilizzano. MyBinder è un'applicazione per iPhone
-      e iPad pensata per catalogare e valutare collezioni di carte collezionabili (TCG).
-    </p>
-    <p>
-      Titolare del trattamento: <strong>[Nome del titolare / società]</strong>,
-      <strong>[indirizzo]</strong>. Per qualsiasi richiesta puoi scriverci a
-      <a href="mailto:hello@mybinder.app">hello@mybinder.app</a>.
-    </p>
+    <!-- ===================== IT ===================== -->
+    <div data-lang="it">
+      <h2>1. Introduzione</h2>
+      <p>La presente informativa descrive come <strong>MyBinder</strong> ("l'app", "noi") tratta i dati delle persone che la utilizzano. MyBinder è un'applicazione per iPhone e iPad pensata per catalogare e valutare collezioni di carte collezionabili (TCG).</p>
+      <p>Titolare del trattamento: <strong>[Nome del titolare / società]</strong>, <strong>[indirizzo]</strong>. Per qualsiasi richiesta scrivici a <a href="mailto:hello@mybinder.app">hello@mybinder.app</a>.</p>
 
-    <h2 id="dati">2. Quali dati trattiamo</h2>
-    <h3>Dati della tua collezione</h3>
-    <p>
-      Le carte, i raccoglitori, le note, i costi d'acquisto e le altre informazioni che
-      inserisci restano nel tuo dispositivo e, se attivi la sincronizzazione, nel tuo
-      account <strong>iCloud privato</strong>. Noi non abbiamo accesso a questi dati.
-    </p>
-    <h3>Fotocamera</h3>
-    <p>
-      La fotocamera è usata esclusivamente per scansionare le carte. Le immagini vengono
-      elaborate sul dispositivo per il riconoscimento e non vengono inviate a noi né a terzi.
-    </p>
-    <h3>Acquisti</h3>
-    <p>
-      Gli acquisti dell'abbonamento Premium e dell'opzione lifetime sono gestiti
-      interamente da <strong>Apple</strong> tramite il tuo App Store. Non riceviamo né
-      conserviamo i dati della tua carta di pagamento.
-    </p>
-    <h3>Dati tecnici e diagnostici</h3>
-    <p>
-      Se abiliti la condivisione dei dati diagnostici a livello di sistema, Apple può
-      fornirci report di crash anonimi per migliorare l'app. Questi dati non ti identificano.
-    </p>
+      <h2>2. Quali dati trattiamo</h2>
+      <h3>Dati della tua collezione</h3>
+      <p>Le carte, i raccoglitori, le note, i costi d'acquisto e le altre informazioni che inserisci restano nel tuo dispositivo e, se attivi la sincronizzazione, nel tuo account <strong>iCloud privato</strong>. Noi non abbiamo accesso a questi dati.</p>
+      <h3>Fotocamera</h3>
+      <p>La fotocamera è usata esclusivamente per scansionare le carte. Le immagini vengono elaborate sul dispositivo per il riconoscimento e non vengono inviate a noi né a terzi.</p>
+      <h3>Acquisti</h3>
+      <p>Gli acquisti Premium e lifetime sono gestiti interamente da <strong>Apple</strong> tramite il tuo App Store. Non riceviamo né conserviamo i dati della tua carta di pagamento.</p>
+      <h3>Dati tecnici e diagnostici</h3>
+      <p>Se abiliti la condivisione dei dati diagnostici a livello di sistema, Apple può fornirci report di crash anonimi per migliorare l'app. Questi dati non ti identificano.</p>
 
-    <h2 id="icloud">3. iCloud e sincronizzazione</h2>
-    <p>
-      MyBinder usa <strong>iCloud</strong> per sincronizzare la tua collezione tra i tuoi
-      dispositivi. I dati sono conservati nel tuo account iCloud personale, sotto il
-      controllo del tuo Apple ID, secondo l'informativa privacy di Apple. Puoi disattivare
-      la sincronizzazione in qualsiasi momento dalle impostazioni dell'app o di iOS.
-    </p>
+      <h2>3. iCloud e sincronizzazione</h2>
+      <p>MyBinder usa <strong>iCloud</strong> per sincronizzare la tua collezione tra i tuoi dispositivi. I dati sono conservati nel tuo account iCloud personale, sotto il controllo del tuo Apple ID. Puoi disattivare la sincronizzazione in qualsiasi momento dalle impostazioni dell'app o di iOS.</p>
 
-    <h2 id="prezzi">4. Prezzi e fonti esterne</h2>
-    <p>
-      Per mostrare le stime di valore, l'app richiama servizi di riferimento di mercato
-      (ad esempio cataloghi e listini come CardMarket e TCGplayer). Queste richieste servono
-      solo a recuperare prezzi indicativi e non includono i dati della tua collezione.
-      I valori mostrati sono <strong>stime indicative</strong>, non quotazioni garantite.
-    </p>
+      <h2>4. Prezzi e fonti esterne</h2>
+      <p>Per mostrare le stime di valore, l'app richiama servizi di riferimento di mercato (ad esempio CardMarket e TCGplayer). Queste richieste servono solo a recuperare prezzi indicativi e non includono i dati della tua collezione. I valori mostrati sono <strong>stime indicative</strong>, non quotazioni garantite.</p>
 
-    <h2 id="pubblicita">5. Pubblicità</h2>
-    <p>
-      Gli utenti della versione gratuita possono vedere pubblicità all'interno dell'app.
-      <span class="placeholder" style="display:inline-block;margin:8px 0;">
-        Da completare quando integri un circuito pubblicitario reale: indica qui il fornitore
-        (es. Google AdMob) e aggiorna di conseguenza la scheda "Privacy" dell'App Store.
-        Se il circuito traccia gli utenti, sarà necessario il consenso ATT.
-      </span>
-      Gli utenti Premium non vedono pubblicità.
-    </p>
+      <h2>5. Pubblicità</h2>
+      <p>Gli utenti della versione gratuita possono vedere pubblicità all'interno dell'app. Quando integreremo un circuito pubblicitario reale aggiorneremo questa informativa e la scheda "Privacy" dell'App Store; se il circuito traccia gli utenti, richiederemo il consenso (ATT). Gli utenti Premium non vedono pubblicità.</p>
 
-    <h2 id="condivisione">6. Con chi condividiamo i dati</h2>
-    <p>Non vendiamo i tuoi dati. Possono essere coinvolti unicamente:</p>
-    <ul>
-      <li><strong>Apple</strong> — per iCloud, gli acquisti e l'eventuale diagnostica.</li>
-      <li><strong>Fornitori di prezzi di riferimento</strong> — solo per recuperare listini di mercato.</li>
-      <li>Eventuali fornitori tecnici necessari al funzionamento dell'app, sempre nel rispetto della presente informativa.</li>
-    </ul>
+      <h2>6. Con chi condividiamo i dati</h2>
+      <p>Non vendiamo i tuoi dati. Possono essere coinvolti unicamente:</p>
+      <ul>
+        <li><strong>Apple</strong> — per iCloud, gli acquisti e l'eventuale diagnostica.</li>
+        <li><strong>Fornitori di prezzi di riferimento</strong> — solo per recuperare listini di mercato.</li>
+        <li>Eventuali fornitori tecnici necessari al funzionamento dell'app.</li>
+      </ul>
 
-    <h2 id="diritti">7. I tuoi diritti</h2>
-    <p>
-      Poiché i dati della collezione risiedono sul tuo dispositivo e nel tuo iCloud, puoi
-      modificarli o eliminarli in qualsiasi momento direttamente dall'app, ed esportarli
-      (CSV) quando vuoi. Se ti trovi nell'Unione Europea hai inoltre i diritti previsti dal
-      GDPR (accesso, rettifica, cancellazione, limitazione, portabilità). Per esercitarli
-      scrivici a <a href="mailto:hello@mybinder.app">hello@mybinder.app</a>.
-    </p>
+      <h2>7. I tuoi diritti</h2>
+      <p>Poiché i dati risiedono sul tuo dispositivo e nel tuo iCloud, puoi modificarli o eliminarli in qualsiasi momento dall'app, ed esportarli (CSV) quando vuoi. Se ti trovi nell'Unione Europea hai inoltre i diritti previsti dal GDPR (accesso, rettifica, cancellazione, limitazione, portabilità). Scrivici a <a href="mailto:hello@mybinder.app">hello@mybinder.app</a>.</p>
 
-    <h2 id="minori">8. Minori</h2>
-    <p>
-      MyBinder non è destinata a minori di 13 anni e non raccoglie consapevolmente i loro dati.
-    </p>
+      <h2>8. Minori</h2>
+      <p>MyBinder non è destinata a minori di 13 anni e non raccoglie consapevolmente i loro dati.</p>
 
-    <h2 id="modifiche">9. Modifiche a questa informativa</h2>
-    <p>
-      Potremmo aggiornare questa informativa. In caso di modifiche rilevanti aggiorneremo la
-      data in cima alla pagina. L'uso continuato dell'app dopo le modifiche ne comporta l'accettazione.
-    </p>
+      <h2>9. Modifiche</h2>
+      <p>Potremmo aggiornare questa informativa. In caso di modifiche rilevanti aggiorneremo la data in cima alla pagina.</p>
 
-    <h2 id="contatti">10. Contatti</h2>
-    <p>
-      Per domande sulla privacy scrivi a
-      <a href="mailto:hello@mybinder.app">hello@mybinder.app</a>.
-    </p>
+      <h2>10. Contatti</h2>
+      <p>Per domande sulla privacy scrivi a <a href="mailto:hello@mybinder.app">hello@mybinder.app</a>.</p>
+    </div>
+
+    <!-- ===================== EN ===================== -->
+    <div data-lang="en">
+      <h2>1. Introduction</h2>
+      <p>This policy describes how <strong>MyBinder</strong> ("the app", "we") handles the data of the people who use it. MyBinder is an iPhone and iPad app for cataloguing and valuing collectible card (TCG) collections.</p>
+      <p>Data controller: <strong>[Owner / company name]</strong>, <strong>[address]</strong>. For any request, contact us at <a href="mailto:hello@mybinder.app">hello@mybinder.app</a>.</p>
+
+      <h2>2. What data we process</h2>
+      <h3>Your collection data</h3>
+      <p>The cards, binders, notes, purchase costs and other information you enter stay on your device and, if you enable sync, in your <strong>private iCloud</strong> account. We have no access to this data.</p>
+      <h3>Camera</h3>
+      <p>The camera is used solely to scan cards. Images are processed on-device for recognition and are not sent to us or to third parties.</p>
+      <h3>Purchases</h3>
+      <p>Premium and lifetime purchases are handled entirely by <strong>Apple</strong> through your App Store. We do not receive or store your payment card details.</p>
+      <h3>Technical & diagnostic data</h3>
+      <p>If you enable system-level diagnostics sharing, Apple may provide us with anonymous crash reports to improve the app. This data does not identify you.</p>
+
+      <h2>3. iCloud & sync</h2>
+      <p>MyBinder uses <strong>iCloud</strong> to sync your collection across your devices. Data is stored in your personal iCloud account, under the control of your Apple ID. You can turn off sync at any time from the app or iOS settings.</p>
+
+      <h2>4. Prices & external sources</h2>
+      <p>To show value estimates, the app calls market reference services (such as CardMarket and TCGplayer). These requests only retrieve indicative prices and do not include your collection data. Displayed values are <strong>indicative estimates</strong>, not guaranteed quotes.</p>
+
+      <h2>5. Advertising</h2>
+      <p>Free users may see ads within the app. When we integrate a real ad network we will update this policy and the App Store "Privacy" card; if the network tracks users, we will request consent (ATT). Premium users see no ads.</p>
+
+      <h2>6. Who we share data with</h2>
+      <p>We do not sell your data. Only the following may be involved:</p>
+      <ul>
+        <li><strong>Apple</strong> — for iCloud, purchases and optional diagnostics.</li>
+        <li><strong>Reference price providers</strong> — only to retrieve market prices.</li>
+        <li>Any technical providers necessary to run the app.</li>
+      </ul>
+
+      <h2>7. Your rights</h2>
+      <p>Since data lives on your device and in your iCloud, you can edit or delete it anytime from the app, and export it (CSV) whenever you want. If you are in the European Union you also have GDPR rights (access, rectification, erasure, restriction, portability). Contact us at <a href="mailto:hello@mybinder.app">hello@mybinder.app</a>.</p>
+
+      <h2>8. Minors</h2>
+      <p>MyBinder is not intended for children under 13 and does not knowingly collect their data.</p>
+
+      <h2>9. Changes</h2>
+      <p>We may update this policy. For significant changes we will update the date at the top of the page.</p>
+
+      <h2>10. Contact</h2>
+      <p>For privacy questions, write to <a href="mailto:hello@mybinder.app">hello@mybinder.app</a>.</p>
+    </div>
   </main>
 
   <footer class="footer">
     <div class="container footer__bottom" style="border:0;">
-      <span>© 2026 MyBinder. All rights reserved. · <a href="index.html" style="color:var(--blue-hi);">Home</a> · <a href="terms.html" style="color:var(--blue-hi);">Termini di servizio</a></span>
+      <span>© 2026 MyBinder. All rights reserved. · <a href="index.html" style="color:var(--blue-hi);">Home</a> · <a href="terms.html" style="color:var(--blue-hi);"><span data-lang="it">Termini di servizio</span><span data-lang="en">Terms of Service</span></a></span>
     </div>
   </footer>
 
+  <script src="scripts/main.js"></script>
 </body>
 </html>
