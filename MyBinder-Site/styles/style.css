@@ -74,6 +74,19 @@ h3 { font-size: 1.2rem; font-weight: 700; }
 }
 .eyebrow--light { color: var(--blue-hi); }
 
+/* Small "Premium" pill used inline next to a feature title */
+.tag-premium {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0.62rem; font-weight: 800;
+  letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--blue);
+  background: rgba(36,120,255,0.12);
+  border: 1px solid rgba(36,120,255,0.28);
+  padding: 2px 7px; border-radius: 999px;
+  margin-left: 6px;
+}
+
 /* ---------- Scroll progress bar ---------- */
 .progress {
   position: fixed; top: 0; left: 0;
