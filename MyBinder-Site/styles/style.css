@@ -532,6 +532,9 @@ a, button { -webkit-tap-highlight-color: transparent; }
 
   /* Waitlist: input + bottone impilati a piena larghezza */
   .waitlist__form { flex-direction: column; }
+  /* In a column flex the `flex-basis: 220px` would size the HEIGHT, blowing the
+     email field up to a ~220px-tall box. Reset it to auto-height, full width. */
+  .waitlist__form input { flex: 0 0 auto; width: 100%; }
   .waitlist__form .btn { width: 100%; }
 }
 
